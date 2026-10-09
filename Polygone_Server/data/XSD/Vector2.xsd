@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schema version="1.0"
+        targetNamespace="http://myGame/models"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:gm="http://myGame/models"
+        elementFormDefault="qualified">
+
+    <complexType name="Vector2">
+        <sequence>
+            <element name="X" type="int"/>
+            <element name="Y" type="int"/>
+        </sequence>
+    </complexType>
+    
+</schema>

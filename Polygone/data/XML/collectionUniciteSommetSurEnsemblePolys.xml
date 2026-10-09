@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<collectionPolyUniciteSommets xmlns="http://www.l3miage.fr/geometry"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                    xsi:schemaLocation="http://www.l3miage.fr/geometry ../XSD/polygone.xsd">
+    <!-- ok, l'unicité des sommets se fait à l'intérieur des polygones -->
+    <polygone>
+        <sommet id="0">
+            <x>1.1</x>
+            <y>9.2</y>
+        </sommet>
+        <sommet id="1">
+            <x>1.1</x>
+            <y>11.2</y>
+        </sommet>
+        <sommet id="2">
+            <x>3.1</x>
+            <y>15.2</y>
+        </sommet>
+    </polygone>
+    <polygone>
+        <sommet id="3">
+            <x>1.1</x>
+            <y>9.2</y>
+        </sommet>
+        <sommet id="4">
+            <x>1.1</x>
+            <y>11.2</y>
+        </sommet>
+        <sommet id="5">
+            <x>3.1</x>
+            <y>15.2</y>
+        </sommet>
+    </polygone>
+    <polygone>
+        <sommet id="6">
+            <x>1.1</x>
+            <y>9.2</y>
+        </sommet>
+        <sommet id="7">
+            <x>1.1</x>
+            <y>11.2</y>
+        </sommet>
+        <sommet id="8">
+            <x>3.1</x>
+            <y>15.2</y>
+        </sommet>
+    </polygone>
+</collectionPolyUniciteSommets>

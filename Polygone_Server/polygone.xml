@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pl:polygone 
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns:pl='http://myGame/models'
+        xsi:schemaLocation='http://myGame/models polygone_v1.xsd'
+        nom="star">
+    <pl:sommet>
+        <pl:X>100</pl:X>
+        <pl:Y>10</pl:Y>
+    </pl:sommet>
+    <pl:sommet>
+        <pl:X>40</pl:X>
+        <pl:Y>198</pl:Y>
+    </pl:sommet>
+    <pl:sommet>
+        <pl:X>190</pl:X>
+        <pl:Y>78</pl:Y>
+    </pl:sommet>
+    <pl:sommet>
+        <pl:X>10</pl:X>
+        <pl:Y>78</pl:Y>
+    </pl:sommet>
+    <pl:sommet>
+        <pl:X>160</pl:X>
+        <pl:Y>198</pl:Y>
+    </pl:sommet>
+</pl:polygone>

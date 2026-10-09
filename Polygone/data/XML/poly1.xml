@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pl:polygone
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns:pl='http://www.l3miage.fr/geometry'
+        xsi:schemaLocation='http://www.l3miage.fr/geometry ../XSD/polygone.xsd'>
+    <pl:sommet id="0">
+        <pl:x>100.0</pl:x>
+        <pl:y>10.0</pl:y>
+    </pl:sommet>
+    <pl:sommet id="1">
+        <pl:x>40.0</pl:x>
+        <pl:y>198.0</pl:y>
+    </pl:sommet>
+    <pl:sommet id="2">
+        <pl:x>190.0</pl:x>
+        <pl:y>78.0</pl:y>
+    </pl:sommet>
+    <pl:sommet id="3">
+        <pl:x>10.0</pl:x>
+        <pl:y>78.0</pl:y>
+    </pl:sommet>
+    <pl:sommet id="4">
+        <pl:x>160.0</pl:x>
+        <pl:y>198.0</pl:y>
+    </pl:sommet>
+</pl:polygone>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.l3miage.fr/geometry"
+        xmlns:gm = "http://www.l3miage.fr/geometry"
+        elementFormDefault="qualified">
+    
+    <include schemaLocation="point.xsd"/>
+    
+    <element name="polygone" type="gm:Polygone">
+        <key name="idUnique">
+            <selector xpath="gm:sommet"/>
+            <field xpath="@id"/>
+        </key>
+    </element>
+    <element name="polySansUnicite" type="gm:Polygone"/>
+    <element name="collectionPolyUniciteSommets" type="gm:CollectionPoly">
+        <unique name="uniqueCollectionPolyUniciteSommets">
+            <selector xpath=".//gm:sommet"/>
+            <field xpath="@id"/>
+        </unique>
+    </element>
+
+    <element name="collectionPolygonesUniciteDansPoly" type="gm:CollectionPoly"/>
+    
+    <complexType name="CollectionPoly">
+        <sequence>
+            <element name="polygone" type="gm:Polygone" minOccurs="0" maxOccurs="unbounded">
+                <key name="idUniqueDansPoly">
+                    <selector xpath="gm:sommet"/>
+                    <field xpath="@id"/>
+                </key>
+            </element> 
+        </sequence>
+    </complexType>
+    
+
+    
+<complexType name="Polygone">
+    <sequence> 
+        <element name="sommet" type="gm:Sommet" minOccurs="3" maxOccurs="unbounded"/>
+    </sequence>
+</complexType>
+
+    <complexType name="Sommet">
+        <complexContent>
+            <extension base="gm:Point">
+                <attribute name="id" type="int" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    
+</schema>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygone_Server", "Polygone_Server\Polygone_Server.csproj", "{952D53A0-90D5-4F85-826D-8643DCC86A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygone_Client", "Polygone_Client\Polygone_Client.csproj", "{4F3B6D5D-CAD0-48A5-891E-561F9CF2D7A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygone", "Polygone\Polygone.csproj", "{F3C7D787-72EB-4ED0-A35E-DACD7E2F33E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{952D53A0-90D5-4F85-826D-8643DCC86A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952D53A0-90D5-4F85-826D-8643DCC86A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952D53A0-90D5-4F85-826D-8643DCC86A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952D53A0-90D5-4F85-826D-8643DCC86A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F3B6D5D-CAD0-48A5-891E-561F9CF2D7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F3B6D5D-CAD0-48A5-891E-561F9CF2D7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F3B6D5D-CAD0-48A5-891E-561F9CF2D7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F3B6D5D-CAD0-48A5-891E-561F9CF2D7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C7D787-72EB-4ED0-A35E-DACD7E2F33E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C7D787-72EB-4ED0-A35E-DACD7E2F33E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C7D787-72EB-4ED0-A35E-DACD7E2F33E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C7D787-72EB-4ED0-A35E-DACD7E2F33E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

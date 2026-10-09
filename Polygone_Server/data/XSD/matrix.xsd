@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:mat="http://www.l3miage.fr/matrix"
+           targetNamespace="http://www.l3miage.fr/matrix"
+           elementFormDefault="qualified">
+
+
+    <xs:element name="matrix" type="mat:Matrix"/>
+
+    <xs:complexType name="Cell">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="cellNo" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="Row">
+        <xs:sequence>
+            <!-- NON
+            <xs:element name="cell" type="mat:Cell" minOccurs="1" maxOccurs="unbounded">
+                <xs:unique name=""></xs:unique>
+            </xs:element>
+            -->
+            <!-- toujours non !
+            <xs:element name="cell" type="mat:Cell"">                <xs:unique name=""></xs:unique></xs:element>
+            <xs:element name="cell" type="mat:Cell"">                <xs:unique name=""></xs:unique></xs:element>
+            ...
+            -->
+
+            <!-- oui -->
+            <xs:element name="cell" type="mat:Cell" minOccurs="1" maxOccurs="unbounded"/>
+
+        </xs:sequence>
+        <xs:attribute name="rowNo" type="xs:int" use="required"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="Matrix">
+        <xs:sequence>
+            <xs:element name="row" type="mat:Row" minOccurs="1" maxOccurs="unbounded">
+                <!-- clef unique sur cellNo ici ! car connait toutes les "cell" -->
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
